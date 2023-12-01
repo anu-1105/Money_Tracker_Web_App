@@ -7,16 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Money Tracker</title>
   <link rel="stylesheet" href="/styles.css">
-
 </head>
 
 <body>
   <video autoplay muted loop id="bg-video">
-    <source src="/images/SunbeamBlueVidevo_preview.mp4" type="video/mp4"> <!-- Adjust the path accordingly -->
+    <source src="/images/money.mp4" type="video/mp4"> <!-- Adjust the path accordingly -->
     Your browser does not support the video tag.
   </video>
   <header>
-    <img src="/images/logo.png" alt="Logo" class="logo">
+    <img src="/images/money.png" alt="Logo" class="logo">
     <h1>Money Tracker</h1>
   </header>
 
@@ -38,21 +37,6 @@
       
         <button type="submit">Add Transaction</button>
       </form>
-      <!-- <form action="/addTransaction" method="POST">
-        <label for="type">Type:</label>
-        <select name="type" id="type">
-          <option value="Expense">Expense</option>
-          <option value="Income">Income</option>
-        </select>
-
-        <label for="description">Description:</label>
-        <input type="text" name="description" required>
-
-        <label for="amount">Amount:</label>
-        <input type="number" name="amount" required>
-
-        <button type="submit">Add Transaction</button>
-      </form> -->
     </section>
     <section class="transactions">
       <h2>Transactions</h2>
@@ -68,20 +52,11 @@
         <% }); %>
       </ul>
     </section>
-    <!-- <section class="transactions">
-      <h2>Transactions</h2>
-      <ul>
-        <% transactions.forEach(transaction => { %>
-          <li class="<%= transaction.type.toLowerCase() %>">
-            <%= transaction.type %> - <%= transaction.description %> - <%= transaction.amount %> - <%= transaction.date.toLocaleDateString() %>
-          </li>
-        <% }); %>
-      </ul>
-    </section> -->
+
   </main>
 
   <footer>
-    <p>&copy; 2023 Money Tracker App by Devesh</p>
+    <p>&copy; 2023 Money Tracker App by Anuuu</p>
   </footer>
 </body>
 

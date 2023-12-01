@@ -20,20 +20,22 @@ video {
 .logo {
   width: 100px; 
   height: auto;
-  margin-right: 530px; 
+  margin-right: 400px; 
 }
 
 header {
-  background-color: #0e5193;
+  background-color: rgb(14, 106, 25);
   color: #ecf0f1;
-  text-align: center;
+  text-align:center;
+  text-shadow:#e73c8c;
   padding: 1rem 0;
   padding-left: 20px ;
   display: flex;
   align-items: center;
 }
 
-h1 {
+h1
+ {
   margin: 0;
 }
 
@@ -43,7 +45,7 @@ main {
 }
 
 .add-transaction, .transactions {
-  background-color: #044c5e;
+  background-color: rgb(48, 78, 142);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -52,7 +54,7 @@ main {
 }
 
 .add-transaction:hover, .transactions:hover {
-  background-color: #567fb3;
+  background-color: #549fea;
   transform: translateY(-5px);
 }
 
@@ -75,6 +77,7 @@ input, select, button {
 input:focus, select:focus, button:focus {
   border-color: #3498db;
 }
+
 
 button {
   background-color: #2071a7;
@@ -101,7 +104,7 @@ button:hover {
 }
 
 .delete-btn {
-  background-color: #1f74a9;
+  background-color: #811db7;
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -113,7 +116,7 @@ button:hover {
 }
 
 .delete-btn:hover {
-  background-color: #c0392b;
+  background-color: #d82167;
 }
 .transactions li:hover {
   transform: scale(1.05);
@@ -121,12 +124,12 @@ button:hover {
 }
 
 .expense {
-  background-color: #e74c3c;
+  background-color: #e73c3c;
   color: #fff;
 }
 
 .income {
-  background-color: #2ecc71;
+  background-color: #26a80c;
   color: #fff;
 }
 

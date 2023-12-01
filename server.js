@@ -10,11 +10,10 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3000;
 
-
-
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
- mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.clbgm9i.mongodb.net/?retryWrites=true&w=majority`);
+// mongodb+srv://anumahesh115:<password>@cluster0.w3kbwil.mongodb.net/?retryWrites=true&w=majority
+ mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.w3kbwil.mongodb.net/?retryWrites=true&w=majority`);
 
 const publicPath = path.join(__dirname, 'public'); // Set the path to the 'public' directory
 
