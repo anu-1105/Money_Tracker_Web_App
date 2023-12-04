@@ -12,12 +12,12 @@ const PORT = process.env.PORT || 3000;
 
 const username = process.env.MONGODB_USERNAME;
 const password = process.env.MONGODB_PASSWORD;
-// mongodb+srv://anumahesh115:<password>@cluster0.w3kbwil.mongodb.net/?retryWrites=true&w=majority
+
  mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.w3kbwil.mongodb.net/?retryWrites=true&w=majority`);
 
-const publicPath = path.join(__dirname, 'public'); // Set the path to the 'public' directory
+const publicPath = path.join(__dirname, 'public'); 
 
-app.use(express.static(publicPath)); // Serve static files from the 'public' directory
+app.use(express.static(publicPath)); 
 
 // Create a schema for expenses and incomes
 const transactionSchema = new mongoose.Schema({
